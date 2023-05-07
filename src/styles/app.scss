@@ -1,0 +1,77 @@
+:root {
+  background: $background-color;
+}
+#main {
+  position: relative;
+  margin: 0 auto;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 30rem 1fr 10rem;
+  grid-template-rows: 20rem 30rem 40rem;
+  grid-template-areas:
+    "title title title about about"
+    "projects projects tile about about"
+    "links project project project buttons";
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    > div {
+      &#title {
+        width: 100%;
+      }
+      &#about {
+        width: 100%;
+      }
+      &#projects {
+        width: 100%;
+      }
+      &#project {
+        width: 100%;
+      }
+      &#links {
+        width: 100%;
+        // .inside-box {
+        //     flex-direction: row;
+        //     justify-content: center
+        // }
+      }
+      &#tile {
+        width: calc(50% - 1rem);
+      }
+      &#buttons {
+        width: calc(50% - 1rem);
+      }
+    }
+  }
+  $gap: 2rem;
+  column-gap: $gap;
+  row-gap: $gap;
+  padding: $gap;
+  > div {
+    padding: 1rem;
+    background: rgb(128, 91, 91);
+    border-radius: 5px;
+  }
+  #title {
+    grid-area: title;
+  }
+  #about {
+    grid-area: about;
+  }
+  #projects {
+    grid-area: projects;
+  }
+  #tile {
+    grid-area: tile;
+  }
+  #links {
+    grid-area: links;
+  }
+  #project {
+    grid-area: project;
+  }
+  #buttons {
+    grid-area: buttons;
+  }
+}
