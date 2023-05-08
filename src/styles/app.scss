@@ -10,7 +10,6 @@
   }
 }
 #main {
-  // backdrop-filter: blur(0px);
   position: relative;
   margin: 0 auto;
   max-width: 120rem;
@@ -59,6 +58,7 @@
   padding: $gap;
   > div {
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     border-radius: $border-radius;
     .container {
       $padding-tab: 2px;

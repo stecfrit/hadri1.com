@@ -1,11 +1,13 @@
 #tile {
   backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   .container {
     .body {
       h2 {
         color: $text-color-alt;
       }
       backdrop-filter: blur(30px) invert(100%) saturate(120%) !important;
+      -webkit-backdrop-filter: blur(30px) invert(100%) saturate(120%) !important;
     }
   }
 }
