@@ -29,7 +29,7 @@ function App() {
   //   </div>
   // );
   return (
-    <div id="main">
+    <div className="main">
       <Window idProp={"title"} title={"this-is-my-name"} />
       <Window idProp={"about"} />
       <Window
@@ -48,6 +48,8 @@ function App() {
       <Window idProp={"links"} hideButtons={true} />
       <Window idProp={"tile"} />
       <Window idProp={"buttons"} hideButtons={true} title={"actions"} />
+      <div className="hider left"></div>
+      <div className="hider right"></div>
     </div>
   );
 }

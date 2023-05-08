@@ -69,7 +69,7 @@ function Window({
 
   // Content
   return (
-    <div id={idProp}>
+    <div id={idProp} className="window">
       <div className="container">
         <div className="header">
           <h3>{title ? title : idProp}.exe</h3>

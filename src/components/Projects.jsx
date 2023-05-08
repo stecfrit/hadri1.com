@@ -20,7 +20,7 @@ function Projects({
             handleProjClick(e);
           }}
         >
-          <p>{project.name}</p>
+          <p>-&gt; {project.name}</p>
         </div>
       ))}
     </>

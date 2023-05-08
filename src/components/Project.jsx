@@ -7,9 +7,14 @@ function Project({
 }) {
   return (
     <>
-      <h2>{projects[selectedProj].name}</h2>
+      <h2>{projects[selectedProj].name} </h2>
       <p>{projects[selectedProj].description}</p>
-      <a href={projects[selectedProj].link} target="_blank">{projects[selectedProj].link}</a>
+      {projects[selectedProj].tech.map((thing, index) => (
+        <p key={index}>-&gt; {thing}</p>
+      ))}
+      <a href={projects[selectedProj].link} target="_blank">
+        link: {projects[selectedProj].link}
+      </a>
     </>
   );
 }

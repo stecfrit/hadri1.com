@@ -1,15 +1,19 @@
 :root {
-  background: $background, $background2;
+  background: $background fixed, $background2 fixed;
   background-repeat: repeat-x;
   background-size: 900px 100vh, cover;
   animation: scroll-anim 5s linear infinite;
+  overflow-x: hidden;
 }
 @keyframes scroll-anim {
+  from {
+    background-position: 0 50%;
+  }
   to {
-    background-position: -900px 0;
+    background-position: -900px 50%;
   }
 }
-#main {
+.main {
   position: relative;
   margin: 0 auto;
   max-width: 120rem;
@@ -20,11 +24,37 @@
     "title title title about about"
     "projects projects tile about about"
     "links project project project buttons";
+  .hider {
+    display: flex;
+    width: calc(calc(100vw - 120rem) / 2);
+    height: 100%;
+    backdrop-filter: blur(50px);
+    // background: $tab-color;
+    -webkit-backdrop-filter: blur(50px);
+    position: absolute;
+    top: 0;
+    &.left {
+      left: 0;
+      transform: translateX(-100%);
+      border-right: 2px solid $tab-color;
+    }
+    &.right {
+      right: 0;
+      transform: translateX(100%);
+      border-left: 2px solid $tab-color;
+    }
+  }
+  @media only screen and (min-width: 120rem) {
+    .hider {
+      display: flex;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    > div {
+    > .window {
       &#title {
         width: 100%;
       }
@@ -56,7 +86,7 @@
   column-gap: $gap;
   row-gap: $gap;
   padding: $gap;
-  > div {
+  > .window {
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     border-radius: $border-radius;
@@ -71,6 +101,7 @@
       height: 100%;
       padding: $padding-tab;
       .header {
+        line-height: 1;
         border-radius: calc($border-radius - $padding-tab)
           calc($border-radius - $padding-tab) 0 0;
         background: $tab-color;

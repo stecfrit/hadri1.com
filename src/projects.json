@@ -1,12 +1,5 @@
 [
   {
-    "name": "Luminance Company Website",
-    "moniker": "luminance",
-    "description": "Description...",
-    "tech": ["Handlebars", "Less.js"],
-    "link": "https://www.luminance.com"
-  },
-  {
     "name": "Silhouette",
     "moniker": "silhouette",
     "description": "Anonymous real-time chat app.",
@@ -26,5 +19,12 @@
     "description": "AI text-completion app, with customizable settings, using OpenAI's API.",
     "tech": ["React", "OpenAI", "Axios"],
     "link": "https://brain.hadri1.com"
+  },
+  {
+    "name": "Luminance Company Website",
+    "moniker": "luminance",
+    "description": "As part of my role as a Web Software Engineer at Luminance, I was tasked with updating the look of the company website. ",
+    "tech": ["Handlebars"],
+    "link": "https://www.luminance.com"
   }
 ]

@@ -3,11 +3,19 @@
   -webkit-backdrop-filter: none !important;
   .container {
     .body {
+      cursor: crosshair;
+      align-items: center;
+      justify-content: center;
       h2 {
+        user-select: none;
         color: $text-color-alt;
       }
-      backdrop-filter: blur(30px) invert(100%) saturate(120%) !important;
-      -webkit-backdrop-filter: blur(30px) invert(100%) saturate(120%) !important;
+      -webkit-box-shadow: inset 0px 0px 100px 0px rgb(0, 0, 0);
+      -moz-box-shadow: inset 0px 0px 100px 0px rgb(0, 0, 0);
+      box-shadow: inset 0px 0px 100px 0px rgb(0, 0, 0);
+
+      backdrop-filter: blur(2px) invert(80%) contrast(150%) sepia(30%) !important;
+      -webkit-backdrop-filter: blur(2px) invert(80%) contrast(150%) sepia(30%) !important;
     }
   }
 }

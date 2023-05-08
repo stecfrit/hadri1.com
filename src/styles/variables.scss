@@ -7,7 +7,7 @@ $background2: url("../assets/blob12.svg");
 $tab-color: rgba(255, 255, 255, 0.2);
 $window-color: rgba(255, 255, 255, 0);
 
-$special-color: #db2c00;
+$special-color: $text-color;
 
 $alert-color: #f34f56;
 $warning-color: #fac537;
@@ -37,7 +37,6 @@ html {
   font-size: 62.5%;
   h1 {
     font-size: $font-size-mega;
-    line-height: 1;
   }
   div,
   p,
@@ -52,7 +51,6 @@ html {
   label,
   li,
   textarea {
-    line-height: 1;
     color: $text-color;
     font-weight: normal;
     font-size: $font-size-normal;
