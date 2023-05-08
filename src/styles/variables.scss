@@ -1,7 +1,19 @@
-$text-color: rgb(241, 241, 241);
-$background-color: #383d47;
+$text-color: #d8d8d8;
+// $text-color: #2c2c2c;
+$text-color-alt: rgb(53, 53, 53);
+$background-color: #41a9ee;
+$background: url("../assets/blob10.svg");
+$background2: url("../assets/blob12.svg");
+$tab-color: rgba(255, 255, 255, 0.2);
+$window-color: rgba(255, 255, 255, 0);
 
 $special-color: #e1d156;
+
+$alert-color: #f34f56;
+$warning-color: #fac537;
+$good-color: #3aea49;
+
+$border-radius: 5px;
 
 $font-size-mega: 5rem;
 $font-size-largest: 4rem;
@@ -38,6 +50,7 @@ html {
   input,
   button,
   label,
+  li,
   textarea {
     line-height: 1;
     color: $text-color;

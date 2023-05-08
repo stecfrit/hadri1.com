@@ -1,7 +1,16 @@
 import React from "react";
 
 function Buttons() {
-  return <div id="buttons">Buttons</div>;
+  return (
+    <>
+      <h2>no</h2>
+      <h2>no</h2>
+      <h2>no</h2>
+      <h2>no</h2>
+      <h2>no</h2>
+      <h2>no</h2>
+    </>
+  );
 }
 
 export default Buttons;

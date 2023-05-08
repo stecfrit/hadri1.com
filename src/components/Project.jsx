@@ -5,7 +5,11 @@ function Project({
   selectedProj: selectedProj,
   setSelectedProj: setSelectedProj,
 }) {
-  return <div id="project">Project</div>;
+  return (
+    <>
+      <h2>project</h2>
+    </>
+  );
 }
 
 export default Project;

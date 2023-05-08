@@ -6,13 +6,14 @@ function Projects({
   setSelectedProj: setSelectedProj,
 }) {
   return (
-    <div id="projects">
+    <>
+      <h2>projects</h2>
       {projects.map((project) => (
         <div key={project.name}>
           <h3>{project.name}</h3>
         </div>
       ))}
-    </div>
+    </>
   );
 }
 

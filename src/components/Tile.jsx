@@ -1,7 +1,11 @@
 import React from "react";
 
 function Tile() {
-  return <div id="tile">Tile</div>;
+  return (
+    <>
+      <h2>this is a tile</h2>
+    </>
+  );
 }
 
 export default Tile;
