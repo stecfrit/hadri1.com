@@ -1,0 +1,16 @@
+#project {
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        a {
+            color: $text-color;
+            text-decoration: none;
+            line-height: 1.2;
+            &:hover {
+                color: $text-color;
+                background: $special-color;
+            }
+        }
+    }
+}

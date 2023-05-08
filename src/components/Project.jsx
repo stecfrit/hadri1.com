@@ -9,7 +9,7 @@ function Project({
     <>
       <h2>{projects[selectedProj].name}</h2>
       <p>{projects[selectedProj].description}</p>
-      <p>{projects[selectedProj].link}</p>
+      <a href={projects[selectedProj].link} target="_blank">{projects[selectedProj].link}</a>
     </>
   );
 }

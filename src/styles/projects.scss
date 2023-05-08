@@ -1,0 +1,12 @@
+#projects {
+    .body {
+        p {
+            cursor: pointer;
+            line-height: 1.2;
+            &:hover {
+                color: $text-color;
+                background: $special-color;
+            }
+        }
+    }
+}

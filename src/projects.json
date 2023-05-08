@@ -1,14 +1,30 @@
 [
   {
-    "name": "Project 1",
-    "moniker": "project1",
-    "description": "this is my project 1",
-    "link": "www.google.com"
+    "name": "Luminance Company Website",
+    "moniker": "luminance",
+    "description": "Description...",
+    "tech": ["Handlebars", "Less.js"],
+    "link": "https://www.luminance.com"
   },
   {
-    "name": "Project 2",
-    "moniker": "project2",
-    "description": "this is my project 2",
-    "link": "www.google.com"
+    "name": "Silhouette",
+    "moniker": "silhouette",
+    "description": "Anonymous real-time chat app.",
+    "tech": ["React", "Firebase"],
+    "link": "https://stecfrit.com"
+  },
+  {
+    "name": "Chess for iPhone",
+    "moniker": "chess",
+    "description": "Chess for 2 players on one device, this was made for iPhones, and is used as a Progressive Web App (PWA) by clicing 'Add to Homescreen'.",
+    "tech": ["React", "Vite"],
+    "link": "https://chess.hadri1.com"
+  },
+  {
+    "name": "Big Brain",
+    "moniker": "big-brain",
+    "description": "AI text-completion app, with customizable settings, using OpenAI's API.",
+    "tech": ["React", "OpenAI", "Axios"],
+    "link": "https://brain.hadri1.com"
   }
 ]
