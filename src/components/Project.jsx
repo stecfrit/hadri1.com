@@ -7,7 +7,9 @@ function Project({
 }) {
   return (
     <>
-      <h2>project</h2>
+      <h2>{projects[selectedProj].name}</h2>
+      <p>{projects[selectedProj].description}</p>
+      <p>{projects[selectedProj].link}</p>
     </>
   );
 }

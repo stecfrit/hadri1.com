@@ -5,12 +5,22 @@ function Projects({
   selectedProj: selectedProj,
   setSelectedProj: setSelectedProj,
 }) {
+  const handleProjClick = (e) => {
+    setSelectedProj(e.currentTarget.dataset.id);
+  };
+
   return (
     <>
       <h2>projects</h2>
-      {projects.map((project) => (
-        <div key={project.name}>
-          <h3>{project.name}</h3>
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          data-id={index}
+          onClick={(e) => {
+            handleProjClick(e);
+          }}
+        >
+          <p>{project.name}</p>
         </div>
       ))}
     </>
