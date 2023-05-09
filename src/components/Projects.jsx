@@ -24,13 +24,13 @@ function Projects({
         >
           <p className={index === selectedProj ? "selected" : ""}>
             <span>-&gt; {project.name}</span>
-            <div className="tech-container">
+            <span className="tech-container">
               {projects[index].tech.map((thing, index) => (
                 <span className="tech" key={index}>
                   {thing}
                 </span>
               ))}
-            </div>
+            </span>
           </p>
         </div>
       ))}
