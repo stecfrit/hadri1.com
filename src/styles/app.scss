@@ -92,11 +92,11 @@
   row-gap: $gap;
   padding: $gap;
   > .window {
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
     border-radius: $border-radius;
+    $padding-tab: 2px; // for container padding
     .container {
-      $padding-tab: 2px;
+      backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(50px);
       border-radius: $border-radius;
       background: none;
       background-clip: content-box;
@@ -104,7 +104,11 @@
       display: flex;
       flex-direction: column;
       height: 100%;
+      max-height: calc(50rem + $gap); // 50rem is the maximum window height
       padding: $padding-tab;
+      overflow: hidden;
+      animation: 2s delay-overflow;
+      transition: max-height 0.2s linear;
       .header {
         line-height: 1;
         border-radius: calc($border-radius - $padding-tab)
@@ -163,10 +167,25 @@
         flex-direction: column;
         gap: 1rem;
         height: 100%;
+        max-height: 100%;
         h2 {
           font-size: $font-size-large;
         }
       }
+    }
+    &.minimized {
+      .container {
+        max-height: 2.2rem;
+        overflow-y: hidden;
+        .header {
+          border-radius: calc($border-radius - $padding-tab);
+        }
+      }
+    }
+    &.expanded {
+    }
+    &.closed {
+      display: none;
     }
   }
   #title {
@@ -189,5 +208,11 @@
   }
   #buttons {
     grid-area: buttons;
+  }
+}
+
+@keyframes delay-overflow {
+  from {
+    overflow: hidden;
   }
 }

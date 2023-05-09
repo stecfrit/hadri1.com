@@ -60,12 +60,32 @@ function Window({
   if (!hideButtons) {
     buttons = (
       <div className="window-buttons">
-        <button className="close"></button>
-        <button className="minimize"></button>
+        <button
+          className="close"
+          onClick={() => {
+            close(idProp);
+          }}
+        ></button>
+        <button
+          className="minimize"
+          onClick={() => {
+            minimize(idProp);
+          }}
+        ></button>
         <button className="expand"></button>
       </div>
     );
   }
+
+  const minimize = (idProp) => {
+    document.getElementById(idProp).classList.toggle("minimized");
+  };
+  const close = (idProp) => {
+    document.getElementById(idProp).classList.toggle("closed");
+  };
+  const expand = (idProp) => {
+    document.getElementById(idProp).classList.toggle("expanded");
+  };
 
   // Content
   return (
