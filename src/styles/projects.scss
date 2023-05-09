@@ -9,10 +9,34 @@
       padding: 0.5rem 0;
       margin: 0 -1rem;
       padding: 0.5rem 1rem;
-      &:hover {
-        color: $text-color-alt;
-        font-weight: bold;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      &:hover,
+      &.selected {
         background: $special-color;
+        span:not(.tech) {
+          color: $text-color-alt;
+          // font-weight: bold;
+        }
+        .tech-container .tech {
+          background: $special-color2;
+        }
+      }
+      span {
+        white-space: nowrap;
+      }
+      .tech-container {
+        display: flex;
+        gap: 1rem;
+        span.tech {
+          font-size: $font-size-small;
+          text-transform: uppercase;
+          background: rgba(255, 255, 255, 0.15);
+          padding: 1px 5px;
+          border-radius: 4px;
+        }
       }
     }
   }

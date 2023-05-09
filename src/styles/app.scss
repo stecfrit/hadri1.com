@@ -1,4 +1,20 @@
+// :root {
+//   background: $background fixed, $background2 fixed;
+//   background-repeat: repeat-x;
+//   background-size: 900px 100vh, cover;
+//   animation: scroll-anim 5s linear infinite;
+//   overflow-x: hidden;
+//   @media only screen and (max-width: 768px) {
+//     background: $background-color, $background;
+//     background-size: cover;
+//     animation: none;
+//   }
+// }
 :root {
+  // overflow-x: hidden;
+  background: $background-color;
+}
+body {
   background: $background fixed, $background2 fixed;
   background-repeat: repeat-x;
   background-size: 900px 100vh, cover;

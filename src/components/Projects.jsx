@@ -6,8 +6,10 @@ function Projects({
   setSelectedProj: setSelectedProj,
 }) {
   const handleProjClick = (e) => {
-    setSelectedProj(e.currentTarget.dataset.id);
+    setSelectedProj(Number(e.currentTarget.dataset.id));
   };
+
+  console.log("selectedProj: ", selectedProj);
 
   return (
     <>
@@ -20,7 +22,16 @@ function Projects({
             handleProjClick(e);
           }}
         >
-          <p>-&gt; {project.name}</p>
+          <p className={index === selectedProj ? "selected" : ""}>
+            <span>-&gt; {project.name}</span>
+            <div className="tech-container">
+              {projects[index].tech.map((thing, index) => (
+                <span className="tech" key={index}>
+                  {thing}
+                </span>
+              ))}
+            </div>
+          </p>
         </div>
       ))}
     </>
