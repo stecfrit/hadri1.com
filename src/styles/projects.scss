@@ -30,7 +30,7 @@
       &:hover,
       &.selected {
         background: $special-color;
-        span:not(.tech) {
+        span.project-name {
           color: $text-color-alt;
           // font-weight: bold;
         }
