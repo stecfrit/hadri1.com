@@ -5,7 +5,9 @@ function Links() {
   return (
     <>
       <h2>links</h2>
-      <LinkedinLogo />
+      <a href="https://www.linkedin.com/in/hbed-develay/">
+        <LinkedinLogo />
+      </a>
     </>
   );
 }
