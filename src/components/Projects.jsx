@@ -23,7 +23,7 @@ function Projects({
           }}
         >
           <p className={index === selectedProj ? "selected" : ""}>
-            <span>-&gt; {project.name}</span>
+            <span className="project-name">-&gt; {project.name}{project.new && <span className="new-tag"></span>}</span>
             <span className="tech-container">
               {projects[index].tech.map((thing, index) => (
                 <span className="tech" key={index}>
