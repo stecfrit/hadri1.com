@@ -13,6 +13,20 @@
       flex-wrap: wrap;
       gap: 1rem;
       align-items: center;
+      span.project-name {
+        position: relative;
+      }
+      span.new-tag {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%,-50%);
+        font-size: $font-size-smallest;
+        text-transform: uppercase;
+        background: $special-color2;
+        padding: 1px 5px;
+        border-radius: 4px;
+      }
       &:hover,
       &.selected {
         background: $special-color;
