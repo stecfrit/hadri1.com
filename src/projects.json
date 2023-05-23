@@ -12,27 +12,31 @@
         "moniker": "silhouette",
         "description": "Anonymous real-time chat app.",
         "tech": ["React", "Firebase"],
-        "link": "https://stecfrit.com"
+        "link": "https://stecfrit.com",
+        "new": false
     },
     {
         "name": "Chess for iPhone",
         "moniker": "chess",
         "description": "Chess for 2 players on one device, this was made for iPhones, and is used as a Progressive Web App (PWA) by clicing 'Add to Homescreen'. I wanted to use Vite for this project to create my React app, as I had never used it and had too many problems with create-react-app.",
         "tech": ["React", "Vite"],
-        "link": "https://chess.hadri1.com"
+        "link": "https://chess.hadri1.com",
+        "new": true
     },
     {
         "name": "Big Brain",
         "moniker": "big-brain",
         "description": "AI text-completion app, with customizable settings, using OpenAI's API.",
         "tech": ["React", "OpenAI", "Axios"],
-        "link": "https://brain.hadri1.com"
+        "link": "https://brain.hadri1.com",
+        "new": true
     },
     {
         "name": "Luminance Company Website",
         "moniker": "luminance",
         "description": "As part of my role as a Web Software Engineer at Luminance, I was tasked with updating the look of the company website. ",
         "tech": ["Handlebars"],
-        "link": "https://www.luminance.com"
+        "link": "https://www.luminance.com",
+        "new": false
     }
 ]
