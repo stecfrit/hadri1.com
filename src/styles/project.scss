@@ -1,33 +1,31 @@
 #project {
-  .body {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    width: 100%;
-    @media only screen and (max-width: 768px) {
-      width: 100%;
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+        h2 {
+            margin-bottom: 1rem;
+        }
+        p {
+            padding: 0.5rem 0;
+        }
+        a {
+            color: $text-color;
+            text-decoration: none;
+            line-height: 1.2;
+            padding: 0.5rem 0;
+            position: relative;
+            margin: 0 -1rem;
+            padding: 0.5rem 1rem;
+            &:hover {
+                z-index: 5;
+                background: $tab-color;
+            }
+        }
     }
-    h2 {
-      margin-bottom: 1rem;
-    }
-    p {
-      padding: 0.5rem 0;
-    }
-    a {
-      color: $text-color;
-      text-decoration: none;
-      line-height: 1.2;
-      padding: 0.5rem 0;
-      position: relative;
-      margin: 0 -1rem;
-      padding: 0.5rem 1rem;
-      &:hover {
-        z-index: 5;
-        // font-weight: bold;
-        color: $text-color-alt;
-        background: $special-color;
-      }
-    }
-  }
 }
