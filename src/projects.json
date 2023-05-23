@@ -4,7 +4,8 @@
         "moniker": "zeitgeist",
         "description": "AI Analytics for geo-political risks",
         "tech": ["React", "AWS"],
-        "link": "https://zeitgeist.hadri1.com"
+        "link": "https://zeitgeist.hadri1.com",
+        "new": true
     },
     {
         "name": "Silhouette",
