@@ -2,6 +2,9 @@
     .body {
         justify-content: space-around;
         align-items: center;
+        @media only screen and (max-width: 768px) {
+            flex-direction: row;
+        }
     }
     a {
         width: 3.5rem;

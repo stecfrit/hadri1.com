@@ -5,6 +5,7 @@
         "description": "AI Analytics for geo-political risks",
         "tech": ["React", "AWS"],
         "link": "https://zeitgeist.hadri1.com",
+        "preview_image": "zeitgeist.png",
         "new": true
     },
     {
@@ -16,20 +17,21 @@
         "new": true
     },
     {
-        "name": "Silhouette",
-        "moniker": "silhouette",
-        "description": "Anonymous real-time chat app.",
-        "tech": ["React", "Firebase"],
-        "link": "https://stecfrit.com",
-        "new": false
-    },
-    {
         "name": "Big Brain",
         "moniker": "big-brain",
         "description": "AI text-completion app, with customizable settings, using OpenAI's API.",
         "tech": ["React", "OpenAI", "Axios"],
         "link": "https://brain.hadri1.com",
+        "preview_image": "brain.png",
         "new": true
+    },
+    {
+        "name": "Silhouette",
+        "moniker": "silhouette",
+        "description": "Anonymous real-time chat app.",
+        "tech": ["React", "Firebase"],
+        "link": "https://chat.hadri1.com",
+        "new": false
     },
     {
         "name": "Luminance Company Website",
