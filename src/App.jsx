@@ -12,25 +12,6 @@ function App() {
 
     console.log(tileMode);
 
-    // return (
-    //   <div id="main">
-    //     <Title />
-    //     <About />
-    //     <Projects
-    //       projects={projects}
-    //       selectedProj={selectedProj}
-    //       setSelectedProj={setSelectedProj}
-    //     />
-    //     <Project
-    //       projects={projects}
-    //       selectedProj={selectedProj}
-    //       setSelectedProj={setSelectedProj}
-    //     />
-    //     <Links />
-    //     <Tile />
-    //     <Buttons />
-    //   </div>
-    // );
     return (
         <div className="main">
             <Window idProp={"title"} title={"this-is-my-name"} />
@@ -56,7 +37,13 @@ function App() {
                 tileMode={tileMode}
                 setTileMode={setTileMode}
             />
-            <Window idProp={"buttons"} hideButtons={true} title={"actions"} />
+            <Window
+                idProp={"buttons"}
+                hideButtons={true}
+                title={"actions"}
+                tileMode={tileMode}
+                setTileMode={setTileMode}
+            />
             <div className="hider left"></div>
             <div className="hider right"></div>
         </div>

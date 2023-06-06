@@ -1,16 +1,24 @@
 import React from "react";
 
-function Buttons() {
-  return (
-    <>
-      <h2>no</h2>
-      <h2>no</h2>
-      <h2>no</h2>
-      <h2>no</h2>
-      <h2>no</h2>
-      <h2>no</h2>
-    </>
-  );
+function Buttons({ tileMode, setTileMode }) {
+    return (
+        <>
+            <button
+                onClick={() => {
+                    setTileMode("hello");
+                }}
+            >
+                1
+            </button>
+            <button
+                onClick={() => {
+                    setTileMode("projects");
+                }}
+            >
+                2
+            </button>
+        </>
+    );
 }
 
 export default Buttons;

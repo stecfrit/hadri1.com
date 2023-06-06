@@ -57,7 +57,7 @@ function Window({
             );
             break;
         case "buttons":
-            content = <Buttons />;
+            content = <Buttons tileMode={tileMode} setTileMode={setTileMode} />;
             break;
         case "links":
             content = <Links />;

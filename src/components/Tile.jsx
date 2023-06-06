@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Tile({ projects, selectedProj, tileMode, setTileMode }) {
     console.log(tileMode);
