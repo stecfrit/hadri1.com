@@ -11,21 +11,21 @@
 //   }
 // }
 :root {
-  // overflow-x: hidden;
-  background: $background-color;
+    // overflow-x: hidden;
+    background: $background-color;
 }
-// body {
-//   background: $background fixed, $background2 fixed;
-//   background-repeat: repeat-x;
-//   background-size: 900px 100vh, cover;
-//   animation: scroll-anim 5s linear infinite;
-//   overflow-x: hidden;
-//   @media only screen and (max-width: 768px) {
-//     background: $background-color, $background;
-//     background-size: cover;
-//     animation: none;
-//   }
-// }
+body {
+    //   background: $background fixed, $background2 fixed;
+    //   background-repeat: repeat-x;
+    //   background-size: 900px 100vh, cover;
+    //   animation: scroll-anim 5s linear infinite;
+    overflow-x: hidden;
+    //   @media only screen and (max-width: 768px) {
+    //     background: $background-color, $background;
+    //     background-size: cover;
+    //     animation: none;
+    //   }
+}
 // @keyframes scroll-anim {
 //   from {
 //     background-position: 0 50%;
@@ -35,200 +35,202 @@
 //   }
 // }
 .main {
-  position: relative;
-  margin: 0 auto;
-  max-width: 120rem;
-  display: grid;
-  grid-template-columns: 10rem 1fr 30rem 1fr 10rem;
-  grid-template-rows: 20rem 30rem 40rem;
-  grid-template-areas:
-    "title title title about about"
-    "projects projects tile about about"
-    "links project project project buttons";
-  .hider {
-    display: flex;
-    width: calc(calc(100vw - 120rem) / 2);
-    height: 100%;
-    backdrop-filter: blur(50px);
-    // background: $tab-color;
-    -webkit-backdrop-filter: blur(50px);
-    position: absolute;
-    top: 0;
-    &.left {
-      left: 0;
-      transform: translateX(-100%);
-      border-right: 2px solid $tab-color;
-    }
-    &.right {
-      right: 0;
-      transform: translateX(100%);
-      border-left: 2px solid $tab-color;
-    }
-  }
-  @media only screen and (min-width: 120rem) {
+    position: relative;
+    margin: 0 auto;
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 10rem 1fr 30rem 1fr 10rem;
+    grid-template-rows: 20rem 30rem 40rem;
+    grid-template-areas:
+        'title title title about about'
+        'projects projects tile about about'
+        'links project project project buttons';
     .hider {
-      display: flex;
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    > .window {
-      &#title {
-        width: 100%;
-      }
-      &#about {
-        width: 100%;
-      }
-      &#projects {
-        width: 100%;
-      }
-      &#project {
-        width: 100%;
-      }
-      &#links {
-        width: 100%;
-        // .inside-box {
-        //     flex-direction: row;
-        //     justify-content: center
-        // }
-      }
-      &#tile {
-        width: calc(50% - 1rem);
-      }
-      &#buttons {
-        width: calc(50% - 1rem);
-      }
-    }
-  }
-  $gap: 2rem;
-  column-gap: $gap;
-  row-gap: $gap;
-  padding: $gap;
-  > .window {
-    border-radius: $border-radius;
-    $padding-tab: 2px; // for container padding
-    .container {
-      backdrop-filter: blur(50px);
-      -webkit-backdrop-filter: blur(50px);
-      border-radius: $border-radius;
-      background: none;
-      background-clip: content-box;
-      box-shadow: inset 0 0 0 $padding-tab $tab-color;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      max-height: calc(50rem + $gap); // 50rem is the maximum window height
-      padding: $padding-tab;
-      overflow: hidden;
-      animation: 2s delay-overflow;
-      transition: max-height 0.2s linear;
-      .header {
-        line-height: 1;
-        border-radius: calc($border-radius - $padding-tab)
-          calc($border-radius - $padding-tab) 0 0;
-        background: $tab-color;
-        padding: 0.2rem;
         display: flex;
-        justify-content: center;
-        position: relative;
-        h3 {
-          // font-weight: bold;
-          font-size: $font-size-smallish;
-          color: $text-color;
-        }
-        .window-buttons {
-          display: flex;
-          position: absolute;
-          left: 0.8rem;
-          top: 50%;
-          transform: translateY(-50%);
-          gap: 0.5rem;
-          button {
-            $button-size: 10px;
-            width: $button-size;
-            height: $button-size;
-            border-radius: 10px;
-            border: none;
-            cursor: pointer;
-            &.close {
-              background: $alert-color;
-              &:hover {
-                background: darken($alert-color, 20);
-              }
-            }
-            &.minimize {
-              background: $warning-color;
-              &:hover {
-                background: darken($warning-color, 20);
-              }
-            }
-            &.expand {
-              background: $good-color;
-              &:hover {
-                background: darken($good-color, 20);
-              }
-            }
-          }
-        }
-      }
-      .body {
-        background: $window-color;
-        border-radius: 0 0 calc($border-radius - $padding-tab)
-          calc($border-radius - $padding-tab);
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        width: calc(calc(100vw - 120rem) / 2);
         height: 100%;
-        max-height: 100%;
-        h2 {
-          font-size: $font-size-large;
+        backdrop-filter: blur(50px);
+        // background: $tab-color;
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 0;
+        &.left {
+            left: 0;
+            transform: translateX(-100%);
+            border-right: 2px solid $tab-color;
         }
-      }
-    }
-    &.minimized {
-      .container {
-        max-height: 2.2rem;
-        overflow-y: hidden;
-        .header {
-          border-radius: calc($border-radius - $padding-tab);
+        &.right {
+            right: 0;
+            transform: translateX(100%);
+            border-left: 2px solid $tab-color;
         }
-      }
     }
-    &.expanded {
+    @media only screen and (min-width: 120rem) {
+        .hider {
+            display: flex;
+        }
     }
-    &.closed {
-      display: none;
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        > .window {
+            &#title {
+                width: 100%;
+            }
+            &#about {
+                width: 100%;
+            }
+            &#projects {
+                width: 100%;
+            }
+            &#project {
+                width: 100%;
+            }
+            &#links {
+                width: 100%;
+                // .inside-box {
+                //     flex-direction: row;
+                //     justify-content: center
+                // }
+            }
+            &#tile {
+                width: calc(50% - 1rem);
+            }
+            &#buttons {
+                width: calc(50% - 1rem);
+            }
+        }
     }
-  }
-  #title {
-    grid-area: title;
-  }
-  #about {
-    grid-area: about;
-  }
-  #projects {
-    grid-area: projects;
-  }
-  #tile {
-    grid-area: tile;
-  }
-  #links {
-    grid-area: links;
-  }
-  #project {
-    grid-area: project;
-  }
-  #buttons {
-    grid-area: buttons;
-  }
+    $gap: 2rem;
+    column-gap: $gap;
+    row-gap: $gap;
+    padding: $gap;
+    > .window {
+        border-radius: $border-radius;
+        $padding-tab: 2px; // for container padding
+        .container {
+            backdrop-filter: blur(50px);
+            -webkit-backdrop-filter: blur(50px);
+            border-radius: $border-radius;
+            background: none;
+            background-clip: content-box;
+            box-shadow: inset 0 0 0 $padding-tab $tab-color;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            max-height: calc(
+                50rem + $gap
+            ); // 50rem is the maximum window height
+            padding: $padding-tab;
+            overflow: hidden;
+            animation: 2s delay-overflow;
+            transition: max-height 0.2s linear;
+            .header {
+                line-height: 1;
+                border-radius: calc($border-radius - $padding-tab)
+                    calc($border-radius - $padding-tab) 0 0;
+                background: $tab-color;
+                padding: 0.2rem;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                h3 {
+                    // font-weight: bold;
+                    font-size: $font-size-smallish;
+                    color: $text-color;
+                }
+                .window-buttons {
+                    display: flex;
+                    position: absolute;
+                    left: 0.8rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    gap: 0.5rem;
+                    button {
+                        $button-size: 10px;
+                        width: $button-size;
+                        height: $button-size;
+                        border-radius: 10px;
+                        border: none;
+                        cursor: pointer;
+                        &.close {
+                            background: $alert-color;
+                            &:hover {
+                                background: darken($alert-color, 20);
+                            }
+                        }
+                        &.minimize {
+                            background: $warning-color;
+                            &:hover {
+                                background: darken($warning-color, 20);
+                            }
+                        }
+                        &.expand {
+                            background: $good-color;
+                            &:hover {
+                                background: darken($good-color, 20);
+                            }
+                        }
+                    }
+                }
+            }
+            .body {
+                background: $window-color;
+                border-radius: 0 0 calc($border-radius - $padding-tab)
+                    calc($border-radius - $padding-tab);
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                height: 100%;
+                max-height: 100%;
+                h2 {
+                    font-size: $font-size-large;
+                }
+            }
+        }
+        &.minimized {
+            .container {
+                max-height: 2.2rem;
+                overflow-y: hidden;
+                .header {
+                    border-radius: calc($border-radius - $padding-tab);
+                }
+            }
+        }
+        &.expanded {
+        }
+        &.closed {
+            display: none;
+        }
+    }
+    #title {
+        grid-area: title;
+    }
+    #about {
+        grid-area: about;
+    }
+    #projects {
+        grid-area: projects;
+    }
+    #tile {
+        grid-area: tile;
+    }
+    #links {
+        grid-area: links;
+    }
+    #project {
+        grid-area: project;
+    }
+    #buttons {
+        grid-area: buttons;
+    }
 }
 
 @keyframes delay-overflow {
-  from {
-    overflow: hidden;
-  }
+    from {
+        overflow: hidden;
+    }
 }
