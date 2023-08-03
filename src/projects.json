@@ -2,7 +2,7 @@
     {
         "name": "Chess for iPhone",
         "moniker": "chess",
-        "description": "Chess for 2 players on one device, this was made for iPhones, and is used as a Progressive Web App (PWA) by clicing 'Add to Homescreen'. I wanted to use Vite for this project to create my React app, as I had never used it and had too many problems with create-react-app.",
+        "description": "Chess for 2 players on one device, this was made for iPhones, and is used as a Progressive Web App (PWA) by clicking 'Add to Homescreen' from Safari. I wanted to use Vite for this project to create my React app, as I had never used it and had too many problems with create-react-app.",
         "tech": ["React", "Vite"],
         "link": "https://chess.hadri1.com",
         "preview_image": "chess.jpg",
