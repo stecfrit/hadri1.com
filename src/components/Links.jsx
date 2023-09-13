@@ -41,7 +41,7 @@ function Links() {
                 <EmailLogo />
             </a>
             <a
-                href="https://hadri1.com/resume/"
+                href="https://resume.hadri1.com/"
                 className="resume"
                 target="_blank"
                 title="resume"
