@@ -16,7 +16,7 @@
         "tech": ["React", "OpenAI", "Axios"],
         "link": "https://brain.hadri1.com",
         "preview_image": "brain.png",
-        "new": true,
+        "new": false,
         "show": true
     },
     {
@@ -44,7 +44,16 @@
         "tech": ["React", "AWS"],
         "link": "https://zeitgeist.hadri1.com",
         "preview_image": "zeitgeist.png",
-        "new": true,
+        "new": false,
+        "show": true
+    },
+    {
+        "name": "Photo Gallery",
+        "moniker": "gallery",
+        "description": "This is an old photo gallery website I made using simple HTML and CSS for a friend.",
+        "tech": [],
+        "link": "https://gallery.hadri1.com",
+        "new": false,
         "show": true
     }
 ]
